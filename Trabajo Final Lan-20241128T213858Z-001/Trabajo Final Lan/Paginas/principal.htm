@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .submenu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover, .submenu a:hover {
+    background-color: #111;
+}
+
+/* Submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    float: none;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina principal</title>
+    <link rel="stylesheet" type="css" href="/Css/principal.css">
+
+</head>
+<body>
+    <img src="./../Imgs/logochaca.png" width="4%"    height="30%"   align="right"> 
+
+    
+    <ul>
+        <li><a href="#">Alumnos</a>
+            <ul class="submenu">
+                <li><a href="#">Nuevo Alumno</a></li>
+                <li><a href="#">Ver Alumnos</a></li>
+                <li><a href="#">Actualizar Alumno</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Profesores</a>
+            <ul class="submenu">
+                <li><a href="#">Nuevo Profesor</a></li>
+                <li><a href="#">Ver Profesores</a></li>
+                <li><a href="#">Actualizar Profesor</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Materia</a>
+            <ul class="submenu">
+                <li><a href="#">Agregar Materia</a></li>
+                <li><a href="#">Ver Materias</a></li>
+                <li><a href="#">Actualizar Materia</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div style="padding: 20px;">
+        <h1>Bienvenido a la Página de Gestión Educativa</h1>
+        <p>Selecciona una opción en el menú para comenzar.</p>
+    </div>
+
+</body>
+</html>
